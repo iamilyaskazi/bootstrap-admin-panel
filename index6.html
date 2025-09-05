@@ -277,9 +277,84 @@
 
       <!-- Reports -->
       <div id="page-reports" class="page d-none">
-        <h5>Reports Page</h5>
-        <p>Report content goes here...</p>
-      </div>
+        <h5 class="mb-3">Reports & Analytics</h5>
+
+        <div class="row g-3">
+            <!-- Sales Overview -->
+            <div class="col-lg-6">
+            <div class="card shadow-sm">
+                <div class="card-header">Sales Overview</div>
+                <div class="card-body">
+                <canvas id="salesChart" height="150"></canvas>
+                </div>
+            </div>
+            </div>
+
+            <!-- User Growth -->
+            <div class="col-lg-6">
+            <div class="card shadow-sm">
+                <div class="card-header">User Growth</div>
+                <div class="card-body">
+                <canvas id="userChart" height="150"></canvas>
+                </div>
+            </div>
+            </div>
+
+            <!-- Revenue Split -->
+            <div class="col-lg-6">
+            <div class="card shadow-sm">
+                <div class="card-header">Revenue Split</div>
+                <div class="card-body">
+                <canvas id="revenueChart" height="150"></canvas>
+                </div>
+            </div>
+            </div>
+
+            <!-- Activity Table -->
+            <div class="col-lg-12">
+            <div class="card shadow-sm">
+                <div class="card-header">Recent Activity</div>
+                <div class="card-body">
+                <table class="table table-striped table-hover align-middle">
+                    <thead class="table-light">
+                    <tr>
+                        <th>#</th>
+                        <th>User</th>
+                        <th>Action</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Alice</td>
+                        <td>Uploaded report</td>
+                        <td>2025-09-04</td>
+                        <td><span class="badge bg-success">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Bob</td>
+                        <td>Edited profile</td>
+                        <td>2025-09-03</td>
+                        <td><span class="badge bg-warning">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Charlie</td>
+                        <td>Deleted file</td>
+                        <td>2025-09-02</td>
+                        <td><span class="badge bg-danger">Failed</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
 
       <!-- Settings -->
       <div id="page-settings" class="page d-none">
@@ -425,6 +500,7 @@
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
     (() => {
       // Theme
@@ -534,8 +610,6 @@
         }
         });
 
-
-
       // Filters
       function filterUsers() {
         const s = searchInput.value.toLowerCase(), r = roleFilter.value, st = statusFilter.value
@@ -551,7 +625,49 @@
         })
       }
       searchInput.oninput = filterUsers; roleFilter.onchange = filterUsers; statusFilter.onchange = filterUsers
+
+      // Sales Chart (Line)
+        new Chart(document.getElementById("salesChart"), {
+            type: "line",
+            data: {
+            labels: ["Jan","Feb","Mar","Apr","May","Jun"],
+            datasets: [{
+                label: "Sales ($)",
+                data: [1200, 1500, 1800, 2200, 2000, 2500],
+                borderColor: "#0d6efd",
+                fill: false,
+                tension: 0.3
+            }]
+            }
+        });
+
+        // User Growth (Bar)
+        new Chart(document.getElementById("userChart"), {
+            type: "bar",
+            data: {
+            labels: ["Jan","Feb","Mar","Apr","May","Jun"],
+            datasets: [{
+                label: "New Users",
+                data: [50, 75, 120, 180, 160, 220],
+                backgroundColor: "#198754"
+            }]
+            }
+        });
+
+        // Revenue Split (Pie)
+        new Chart(document.getElementById("revenueChart"), {
+            type: "pie",
+            data: {
+            labels: ["Product A", "Product B", "Product C"],
+            datasets: [{
+                data: [45, 30, 25],
+                backgroundColor: ["#0d6efd", "#ffc107", "#dc3545"]
+            }]
+            }
+        });
+
     })()
+
   </script>
 </body>
 </html>
