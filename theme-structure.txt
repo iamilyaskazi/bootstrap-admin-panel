@@ -1,0 +1,31 @@
+/project-root
+|-- _html/
+|   |-- index.html
+|   |-- dashboard.html
+|   |-- login.html
+|   |-- profile.html
+|
+|-- _assets/
+|   |-- _css/
+|   |   |-- bootstrap.min.css
+|   |   |-- app.css
+|   |   |-- 
+|   |
+|   |-- _js/
+|   |   |-- bootstrap.bundle.min.js
+|   |   |-- app.js
+|   |   |-- 
+|   |
+|   |-- _img/
+|   |   |-- logo.png
+|   |   |-- user-avatar.jpg
+|   |
+|   |-- _fonts/
+|   |   |-- 
+|   |
+|   |-- _lib/
+|   |   |-- chartjs/
+|   |   |-- 
+|
+|-- README.md
+|-- 
