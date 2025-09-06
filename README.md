@@ -19,7 +19,7 @@ Or you can [Download](https://github.com/iamilyaskazi/bootstrap-admin-panel/arch
 
 ## 🚧Roadmap
 
-Features
+Current roadmap for the first Public initial release.
 
 - [ ] Bootstrap Folder structure
 - [ ] Theme containing sidebar with burger menu to compact
@@ -27,7 +27,11 @@ Features
 - [ ] Dark/Light or Auto theme mode
 - [ ] Dashboard Page (with analytics)
 - [ ] Users Management Page
-- [ ] Roles Managemet Page
+  - [ ] Users (list view with search, filters and pagination)
+  - [ ] Offcanvas Slider for Add/Edit User
+- [ ] Roles Management Page
+  - [ ] Roles (list view with search, filters and pagination)
+  - [ ] Offcanvas Slider for Add/Update role with permissions
 
 ## Contributing
 
