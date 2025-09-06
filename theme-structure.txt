@@ -1,8 +1,8 @@
 /project-root
-|-- _html/
-|   |-- index.html
-|   |-- dashboard.html
+|-- _auth/
 |   |-- login.html
+|   |-- register.html
+|   |-- forgot-password.html
 |   |-- profile.html
 |
 |-- _assets/
@@ -27,5 +27,6 @@
 |   |   |-- chartjs/
 |   |   |-- 
 |
+|-- .gitignore
+|-- index.html
 |-- README.md
-|-- 

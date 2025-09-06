@@ -1,0 +1,17 @@
+# Node.js dependencies
+/node_modules
+
+# Build artifacts
+/dist
+/build
+
+# Editor and OS specific files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Temporary files and folder
+/_archive
+*.tmp
+*.log
