@@ -21,10 +21,10 @@ Or you can [Download](https://github.com/iamilyaskazi/bootstrap-admin-panel/arch
 
 Current roadmap for the first Public initial release.
 
-- [ ] Bootstrap Folder structure
-- [ ] Theme containing sidebar with burger menu to compact
-- [ ] Sticky Topbar with Profile menu
-- [ ] Dark/Light or Auto theme mode
+- [x] Bootstrap Folder structure
+- [x] Theme containing sidebar with burger menu to compact
+- [x] Sticky Topbar with Profile menu
+- [x] Dark/Light or Auto theme mode
 - [ ] Dashboard Page (with analytics)
 - [ ] Users Management Page
   - [ ] Users (list view with search, filters and pagination)
