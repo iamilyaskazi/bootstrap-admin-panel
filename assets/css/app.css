@@ -67,7 +67,7 @@ body {
 
 .sidebar-menu-title {
   color: #d5d6dc;
-  font-size: 0.850rem;
+  font-size: 0.85rem;
   /* text-transform: uppercase; */
   letter-spacing: 0.03em;
   padding: 0.5rem 0.5rem 0.3rem 0.5rem;
@@ -190,8 +190,8 @@ body {
 }
 
 /* ===========================
-         Dark Mode Overrides
-    ========================== */
+  Dark Mode Overrides
+========================== */
 [data-bs-theme="dark"] body {
   background-color: #141821;
   color: #e9ecef;
@@ -234,12 +234,16 @@ body {
   color: var(--sidebar-text) !important;
 }
 
-/* ===========================
-         Sidebar Override for Both Modes
-    ========================== */
+/* ================================
+  Sidebar Override for Both Modes
+=============================== */
 .sidebar {
   background: var(--sidebar-bg) !important;
   color: var(--sidebar-text) !important;
+}
+
+.nav {
+  --bs-nav-link-padding-x: 0.5rem;
 }
 
 .sidebar .nav-link {
