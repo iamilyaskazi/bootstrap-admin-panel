@@ -1,0 +1,31 @@
+:root {
+  /* Reset all border-radius to 0 for square look */
+  --bs-border-radius: 0.145rem;
+  --bs-border-radius-sm: 0.145rem;
+  --bs-border-radius-lg: 0.145rem;
+  --bs-border-radius-xl: 0.145rem;
+  --bs-border-radius-2xl: 0.145rem;
+  --bs-border-radius-pill: 0.145rem;
+
+  /* Custom sidebar colors */
+  --sidebar-bg: #252c3d;
+  --sidebar-text: #9a9fa4;
+  --sidebar-hover: #333a4d;
+  --sidebar-border: #3a4154;
+}
+
+/* Extra enforcement for key components */
+.btn,
+.form-control,
+.form-select,
+.card,
+.badge,
+.dropdown-menu,
+.navbar,
+.offcanvas,
+.modal-content,
+.alert,
+.table,
+.input-group-text {
+  border-radius: 0.145rem !important;
+}
