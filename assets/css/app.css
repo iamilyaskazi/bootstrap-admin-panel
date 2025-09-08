@@ -164,6 +164,37 @@ body {
   font-size: 1rem;
 }
 
+/* Number Animation */
+@keyframes fadeInAnimatedNumber {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes countUpAnimatedNumber {
+  from {
+    /* Initial state, usually 0 */
+    content: "0";
+  }
+  to {
+    /* Target number, will be set by JS */
+    content: attr(data-animated-number);
+  }
+}
+
+.animated-number {
+  font-size: 3em; /* Adjust as needed */
+}
+
+.dropdown-item-theme.active::after {
+  content: "✓";
+  margin-left: 0.5rem;
+}
+
 /* Mobile Offcanvas */
 @media (max-width: 768px) {
   .sidebar {
