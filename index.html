@@ -12,6 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="assets/css/app.css" rel="stylesheet" type="text/css" />
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -114,20 +115,20 @@
             </button>
             <ul class="dropdown-menu dropdown-menu-end shadow-lg border-0 rounded-md" aria-labelledby="themeDropdown">
               <li>
-                <button class="dropdown-item dropdown-item-theme d-flex align-items-center gap-2" data-bs-theme-value="light"
-                  data-bs-theme-icon="bi-sun">
+                <button class="dropdown-item dropdown-item-theme d-flex align-items-center gap-2"
+                  data-bs-theme-value="light" data-bs-theme-icon="bi-sun">
                   <i class="bi bi-sun"></i> Light
                 </button>
               </li>
               <li>
-                <button class="dropdown-item dropdown-item-theme d-flex align-items-center gap-2" data-bs-theme-value="dark"
-                  data-bs-theme-icon="bi-moon">
+                <button class="dropdown-item dropdown-item-theme d-flex align-items-center gap-2"
+                  data-bs-theme-value="dark" data-bs-theme-icon="bi-moon">
                   <i class="bi bi-moon"></i> Dark
                 </button>
               </li>
               <li>
-                <button class="dropdown-item dropdown-item-theme active d-flex align-items-center gap-2" data-bs-theme-value="auto"
-                  data-bs-theme-icon="bi-circle-half">
+                <button class="dropdown-item dropdown-item-theme active d-flex align-items-center gap-2"
+                  data-bs-theme-value="auto" data-bs-theme-icon="bi-circle-half">
                   <i class="bi bi-circle-half"></i> System
                 </button>
               </li>
@@ -156,6 +157,8 @@
 
       <!-- Main Content -->
       <div class="content p-3">
+
+        <!-- Cards Row # 1 -->
         <div class="row g-3">
           <div class="col-md-3">
             <div class="card shadow-sm">
@@ -194,6 +197,26 @@
                 <p class="card-text">
                   <span class="animated-number" data-animated-number="15">0</span> Generated
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Charts + Table Row # 2 -->
+        <div class="row g-3 mt-3">
+          <div class="col-lg-6 mb-4">
+            <div class="card shadow-sm">
+              <div class="card-header">Users Growth</div>
+              <div class="card-body">
+                <canvas id="usersChart"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="card shadow-sm">
+              <div class="card-header">Revenue</div>
+              <div class="card-body">
+                <canvas id="revenueChart"></canvas>
               </div>
             </div>
           </div>
@@ -247,6 +270,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/layout.js"></script>
   <script src="assets/js/app.js"></script>
 
 </body>
