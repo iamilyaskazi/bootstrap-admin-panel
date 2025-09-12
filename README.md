@@ -25,7 +25,7 @@ Current roadmap for the first Public initial release.
 - [x] Theme containing sidebar with burger menu to compact
 - [x] Sticky Topbar with Profile menu
 - [x] Dark/Light or Auto theme mode
-- [ ] Dashboard Page (with analytics)
+- [x] Dashboard Page (with analytics)
 - [ ] Users Management Page
   - [ ] Users (list view with search, filters and pagination)
   - [ ] Offcanvas Slider for Add/Edit User
